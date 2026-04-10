@@ -1,15 +1,16 @@
 import express, { type Express, type Request, type Response } from "express";
 import cors from "cors";
+import * as pinoHttp from "pino-http";
 import router from "./routes";
 import { logger } from "./lib/logger";
 
-// @ts-ignore
-const pinoHttp = require("pino-http");
+const pinoHttpMiddleware = ((pinoHttp as unknown as { default?: unknown })
+  .default ?? pinoHttp) as (options?: any) => any;
 
 const app: Express = express();
 
 app.use(
-  pinoHttp({
+  pinoHttpMiddleware({
     logger,
     serializers: {
       req(req: Request) {
