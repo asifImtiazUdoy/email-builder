@@ -1,0 +1,20 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "le_rCSbS_5MOwkcqiWnE5"
+uri = "file://artifacts/mockup-sandbox/public/images/velour-hero.png"
+type = "image"
+title = "Woman in black activewear"
+
+[[generated]]
+id = "eXHYhyKf24TbvVon0P0m0"
+uri = "file://artifacts/mockup-sandbox/public/images/velour-leggings.png"
+type = "image"
+title = "Black leggings product photo"
+
+[[generated]]
+id = "B23GOhZHL1LYyRfLm9YS5"
+uri = "file://artifacts/mockup-sandbox/public/images/velour-bra.png"
+type = "image"
+title = "Black sports bra product photo"
