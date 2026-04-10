@@ -1,11 +1,8 @@
 {
-  "buildCommand": "pnpm install && pnpm run build",
+  "buildCommand": "pnpm install && cd artifacts/velour-email && pnpm run build",
   "devCommand": "pnpm dev",
   "installCommand": "corepack prepare pnpm@latest --activate && pnpm install",
   "framework": "vite",
-  "projectSettings": {
-    "rootDirectory": "artifacts/velour-email"
-  },
   "env": {
     "PORT": "3000",
     "BASE_PATH": "/"
