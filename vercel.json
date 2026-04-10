@@ -1,10 +1,5 @@
 {
-  "buildCommand": "pnpm install && cd artifacts/velour-email && pnpm run build",
+  "buildCommand": "pnpm install && pnpm --filter @workspace/velour-email run build",
   "devCommand": "pnpm dev",
-  "installCommand": "corepack prepare pnpm@latest --activate && pnpm install",
-  "framework": "vite",
-  "env": {
-    "PORT": "3000",
-    "BASE_PATH": "/"
-  }
+  "installCommand": "corepack prepare pnpm@latest --activate && pnpm install"
 }
